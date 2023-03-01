@@ -127,7 +127,7 @@ function div(a, b) {
         x = x % b;
     }
 
-    return result.join('');
+    return result.length === 0 ? '0' : result.join('');
 }
 
 module.exports = { add, sub, mul, div }
